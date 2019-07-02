@@ -1,0 +1,4 @@
+env/
+__pycsche__
+db.sqlite3
+.vscode
