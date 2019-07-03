@@ -2,7 +2,7 @@ body{
     margin: 0;
 }
 
-/* parte de cima do site, nome do site, acesso aos links e foto de background */
+/* foto de background */
 
 header{
     background-image: url("../img/relacionamento-abusivo.jpg");
@@ -11,11 +11,12 @@ header{
     display: flex;
     align-items: center;
     flex-direction: column;
-    height: 550px;
+    height: 690px;
     width: 100%;
 }
 
-header section{
+
+section{
     background-color: rgb(252, 85, 246);
     display: flex;
     align-items: center;
@@ -25,25 +26,25 @@ header section{
 }
 
 /* logo de cima, mãozinha */
-header section img{ 
+section img{ 
     height: auto;
     width: 50px;
 }
 
 /* título */
-header section h1{
+section h1{
     justify-items: center;
 }
 
 /* login */
-header section div{
+section div{
     display: flex;
     align-items: center;
     justify-content: space-around;
     width: 550px;
 }
 
-header section div input{
+section div input{
     border-radius: 5px;
     border: none;
     height: 20px;
@@ -52,7 +53,7 @@ header section div input{
     margin-right: 8px;
 }
 
-header section div button{
+section div button{
     border: none;
     width: 75px;
     height: auto;
@@ -60,17 +61,17 @@ header section div button{
     font-size: 10pt;
 }
 
-header section div p{
+section div p{
     font-size: 10pt;
     font-weight: bolder;   
 }
 
-/* espaço entre o titulo e a nav */
+ espaço entre o titulo e a nav
 
-.divEspaco{
+.divFrases{
     height: 480px;
     width: 100%;
-}
+} 
 
 /* espaço para os links de acesso */
 
