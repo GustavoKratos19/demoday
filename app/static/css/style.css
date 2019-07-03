@@ -40,7 +40,7 @@ header section div{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 350px;
+    width: 550px;
 }
 
 header section div input{
@@ -74,7 +74,7 @@ header section div p{
 
 /* espaço para os links de acesso */
 
-header nav{
+nav{
     background-color: rgba(252, 85, 246, 0.733);
     display: flex;
     align-items: center;
@@ -83,7 +83,7 @@ header nav{
     width: 100%;
 }
 
-header nav div{
+nav div{
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -92,7 +92,7 @@ header nav div{
     width: 70%;   
 }
 
-header nav div a{
+nav div a{
     color: black;
     font-size: 15px;
     font-weight: bolder;   
