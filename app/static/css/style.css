@@ -91,3 +91,17 @@ nav div a{
 section{
     width: 100%;
 }
+
+/* imagens no footer */
+footer{
+    display: flex;
+    justify-content: center;
+    height: 90px   ;
+}
+
+footer div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width:30%;
+}
