@@ -21,7 +21,7 @@ header section{
     align-items: center;
     justify-content: space-around;
     position: relative;
-    height: 80px;
+    height: 70px;
 }
 
 /* logo de cima, mãozinha */
@@ -40,12 +40,29 @@ header section div{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    width: 350px;
 }
 
-header section input{
+header section div input{
     border-radius: 5px;
     border: none;
     height: 20px;
+    width: 30%;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+header section div button{
+    border: none;
+    width: 75px;
+    height: auto;
+    font-weight: bolder;
+    font-size: 10pt;
+}
+
+header section div p{
+    font-size: 10pt;
+    font-weight: bolder;   
 }
 
 /* espaço entre o titulo e a nav */
