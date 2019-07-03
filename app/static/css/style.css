@@ -22,7 +22,7 @@ section{
     align-items: center;
     justify-content: space-around;
     position: relative;
-    height: 70px;
+    height: 100px;
 }
 
 /* logo de cima, mãozinha */
@@ -44,14 +44,6 @@ section div{
     width: 550px;
 }
 
-section div input{
-    border-radius: 5px;
-    border: none;
-    height: 20px;
-    width: 30%;
-    margin-left: 8px;
-    margin-right: 8px;
-}
 
 section div button{
     border: none;
@@ -61,10 +53,6 @@ section div button{
     font-size: 10pt;
 }
 
-section div p{
-    font-size: 10pt;
-    font-weight: bolder;   
-}
 
  /* espaço entre o titulo e a nav */
 
