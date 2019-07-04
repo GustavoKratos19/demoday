@@ -2,7 +2,7 @@ body{
     margin: 0;
 }
 
-/* parte de cima do site, nome do site, acesso aos links e foto de background */
+/* foto de background */
 
 header{
     background-image: url("../img/relacionamento-abusivo.jpg");
@@ -11,48 +11,41 @@ header{
     display: flex;
     align-items: center;
     flex-direction: column;
-    height: 550px;
+    height: 690px;
     width: 100%;
 }
 
-header section{
+
+section{
     background-color: rgb(252, 85, 246);
     display: flex;
     align-items: center;
     justify-content: space-around;
     position: relative;
-    height: 70px;
+    height: 100px;
 }
 
 /* logo de cima, mãozinha */
-header section img{ 
+section img{ 
     height: auto;
     width: 50px;
 }
 
 /* título */
-header section h1{
+section h1{
     justify-items: center;
 }
 
 /* login */
-header section div{
+section div{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 350px;
+    width: 550px;
 }
 
-header section div input{
-    border-radius: 5px;
-    border: none;
-    height: 20px;
-    width: 30%;
-    margin-left: 8px;
-    margin-right: 8px;
-}
 
-header section div button{
+section div button{
     border: none;
     width: 75px;
     height: auto;
@@ -60,21 +53,17 @@ header section div button{
     font-size: 10pt;
 }
 
-header section div p{
-    font-size: 10pt;
-    font-weight: bolder;   
-}
 
-/* espaço entre o titulo e a nav */
+ /* espaço entre o titulo e a nav */
 
-.divEspaco{
+.divFrases{
     height: 480px;
     width: 100%;
-}
+} 
 
 /* espaço para os links de acesso */
 
-header nav{
+nav{
     background-color: rgba(252, 85, 246, 0.733);
     display: flex;
     align-items: center;
@@ -83,7 +72,7 @@ header nav{
     width: 100%;
 }
 
-header nav div{
+nav div{
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -92,7 +81,7 @@ header nav div{
     width: 70%;   
 }
 
-header nav div a{
+nav div a{
     color: black;
     font-size: 15px;
     font-weight: bolder;   
@@ -101,4 +90,18 @@ header nav div a{
 
 section{
     width: 100%;
+}
+
+/* imagens no footer */
+footer{
+    display: flex;
+    justify-content: center;
+    height: 90px   ;
+}
+
+footer div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width:30%;
 }
