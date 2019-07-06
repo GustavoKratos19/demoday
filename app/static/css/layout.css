@@ -1,0 +1,81 @@
+body{
+    margin: 0;
+}
+
+section{
+    background-color: rgb(252, 85, 246);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    height: 100px;
+}
+
+/* logo de cima, mãozinha */
+section img{ 
+    height: auto;
+    width: 50px;
+}
+
+/* título */
+section h1{
+    justify-items: center;
+}
+
+/* login */
+section div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 150px;
+}
+
+section div a{
+    text-decoration: none;
+}
+
+
+/* espaço para os links de acesso */
+
+nav{
+    background-color: rgba(252, 85, 246, 0.733);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 70px;
+    width: 100%;
+}
+
+nav div{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 90%;
+    width: 70%;   
+}
+
+nav div a{
+    color: black;
+    font-size: 15px;
+    font-weight: bolder;   
+    text-decoration: none;
+}
+
+section{
+    width: 100%;
+}
+
+/* imagens no footer */
+footer{
+    display: flex;
+    justify-content: center;
+    height: 90px   ;
+}
+
+footer div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width:30%;
+}
