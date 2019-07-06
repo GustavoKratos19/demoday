@@ -15,15 +15,11 @@
     <link rel="stylesheet" href="{% static 'css/login.css' %}">
     <title>Demoday</title>
 </head>
-
-<body>
-    
+<body>    
     {% block content %}
     <form action="POST">
-        <input type="hidden" id="csrf_token" value='{"csrfmiddlewaretoken": "{{ csrf_token }}"}'>
-        
-        {{ form }}
-        
+        {% csrf_token %}        
+        {{ form }}        
         <main class="mainLogin">
             <main class="loginClass">
                 <div>
@@ -34,8 +30,7 @@
                         <img src="{% static 'img/user.png' %}" alt="">
                     </div>
                     <input type="login" name= "usuário" placeholder="Digite seu e-mail ou usuário">
-                </div>
-                
+                </div>                
                 <div class="inputImg">
                     <div>
                         <img src="{% static 'img/key.png' %}" alt="">
@@ -45,8 +40,7 @@
                 <button href="https://www.google.com" type="submit" value="Entrar">Entrar</button>
             </main>
         </main>
-    </form>
-    
+    </form>    
     {% endblock %}   
 </body>
 </html>
