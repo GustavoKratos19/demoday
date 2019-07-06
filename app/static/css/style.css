@@ -17,7 +17,7 @@ header{
 
 
 section{
-    background-color: rgb(252, 85, 246);
+    background-color: #b35f86;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -58,7 +58,7 @@ section div a{
 /* espaço para os links de acesso */
 
 nav{
-    background-color: rgba(252, 85, 246, 0.733);
+    background-color: #FFA1CD;
     display: flex;
     align-items: center;
     justify-content: space-around;
