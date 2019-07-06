@@ -41,18 +41,12 @@ section div{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 550px;
+    width: 150px;
 }
 
-
-section div button{
-    border: none;
-    width: 75px;
-    height: auto;
-    font-weight: bolder;
-    font-size: 10pt;
+section div a{
+    text-decoration: none;
 }
-
 
  /* espaço entre o titulo e a nav */
 
