@@ -14,9 +14,15 @@ header{
 
 /* espaço entre o titulo e a nav */
 
+#escuro{
+    background-color: rgba(0, 0, 0, 0.555);
+    height: 100%;
+    width: 100%;
+}
+
 .divFrases{
-    height: 400px;
-    width: 400px;
+    height: 190px;
+    width: auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -24,6 +30,6 @@ header{
 
 .divFrases p{
     font-family: 'Satisfy', 'cursive';
-    font-size: 200px;
+    font-size: 100px;
     color: white;
 }
