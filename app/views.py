@@ -4,8 +4,8 @@ from app.froms import DepoimentosForm
 
 # Create your views here.
 
-def mostrar_home(request):
-    return render(request, 'home.html')
+def mostrar_layout(request):
+    return render(request, 'layout.html')
 
 def mostrar_cadastro(request):
     formulario = CadastroForm(request.POST or None)
@@ -14,5 +14,9 @@ def mostrar_cadastro(request):
         formulario.save()
         formulario = CadastroForm
         menssagem = 'Cadastro realizado com sucesso'
-    return render(request, 'cadastro.html')
+    contexto = {
+        'form' : formulario,
+        'menssagem' : menssagem,
+    }
+    return render(request, 'cadastro.html', contexto)
 
