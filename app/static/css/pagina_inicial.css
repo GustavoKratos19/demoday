@@ -1,0 +1,19 @@
+/* foto de background */
+
+header{
+    background-image: url("../img/relacionamento-abusivo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 690px;
+    width: 100%;
+}
+
+/* espaço entre o titulo e a nav */
+
+.divFrases{
+    height: 480px;
+    width: 100%;
+} 
