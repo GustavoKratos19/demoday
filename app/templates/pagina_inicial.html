@@ -1,0 +1,24 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+    <link rel="shortcut icon" href="{% static 'img/feminismo-logo.png' %}">
+    <title>Pagina Inicial</title>
+</head>
+<body>
+    {% block content %}    
+    <header>
+        <div class="divFrases">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci qui distinctio accusantium nesciunt repellendus dolores dolorum officiis omnis magnam provident illo repudiandae expedita dolor eos ratione, quod nisi doloremque hic?</p> 
+        </div>
+    </header>    
+    <aside>
+    </aside>
+    {% endblock %}    
+</body>
+</html>
