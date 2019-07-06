@@ -1,3 +1,55 @@
 body{
-    margin: 0;
+    margin:0;
+    background-color:#ffcbe3;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 11pt;
+    
+}
+
+.cadastro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 600px;
+}
+
+.cadastro h2{
+    font-family: 'Satisfy', cursive;
+}
+
+.cadastro form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cadastro input{
+    background-color: white;
+    margin: 5px;
+    width: 270px;
+}
+
+.cadastro select{
+    background-color: white;
+    width: 170px;
+    margin: 5px;
+}
+
+.cadastro button{
+    margin-top: 5px;
+}
+
+.cadastro div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100px
+}
+
+.cadastro div a{
+    color: black;
+    text-decoration: none;
+    margin-top: 5px;
 }
