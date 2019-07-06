@@ -20,3 +20,6 @@ def mostrar_cadastro(request):
     }
     return render(request, 'cadastro.html', contexto)
 
+def mostrar_login(request):
+    return render(request, 'login.html')
+
