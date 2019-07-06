@@ -15,12 +15,14 @@ nav{
 /* logo e titulo */
 
 
-nav .logoImg{
+nav .logoImg a{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 80px;
     width: 10%;
+    text-decoration:none;
+    margin-left: 60px;
 }
 
 /* logo de cima, mãozinha */
@@ -34,6 +36,7 @@ nav h1{
     font-family: 'Satisfy', cursive;
     color: white;
     font-size: 40px;
+    cursor: pointer;
 }
 
 
@@ -42,7 +45,7 @@ nav h1{
     justify-content: flex-end;
     display: flex;
     width:60%;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 .divLinks a {
