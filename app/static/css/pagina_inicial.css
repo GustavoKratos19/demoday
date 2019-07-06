@@ -6,6 +6,7 @@ header{
     background-size: cover;
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
     height: 690px;
     width: 100%;
@@ -14,6 +15,15 @@ header{
 /* espaço entre o titulo e a nav */
 
 .divFrases{
-    height: 480px;
-    width: 100%;
+    height: 400px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 } 
+
+.divFrases p{
+    font-family: 'Satisfy', 'cursive';
+    font-size: 200px;
+    color: white;
+}
