@@ -20,11 +20,11 @@
     
     {% block content %}
         <form action="POST">
-            <input type="hidden" name="csrfmiddlewaretoken" value="qYRKmpXoSGo0PKttqrIB4E82Ufrsb8JlC5kvzc1Poqbhg7YkQQcQwwp8iYEO4cP1">
-            {{ csrf_token }}
+            <input type="hidden" id="csrf_token" value='{"csrfmiddlewaretoken": "{{ csrf_token }}"}'>
+
             {{ form }}
             
-        <main class="loginid">
+        <main class="mainlogin">
             <main class="loginclass">
                 <div>
                   <h1>Login</h1>
