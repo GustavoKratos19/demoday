@@ -19,29 +19,33 @@
 <body>
     
     {% block content %}
-        <form action="POST">
-            <input type="hidden" id="csrf_token" value='{"csrfmiddlewaretoken": "{{ csrf_token }}"}'>
-
-            {{ form }}
-            
-        <main class="mainlogin">
-            <main class="loginclass">
+    <form action="POST">
+        <input type="hidden" id="csrf_token" value='{"csrfmiddlewaretoken": "{{ csrf_token }}"}'>
+        
+        {{ form }}
+        
+        <main class="mainLogin">
+            <main class="loginClass">
                 <div>
-                  <h1>Login</h1>
+                    <h2>Login</h2>
                 </div>
-                <div>
-                    <img src="/app/static/img/icons8-male-user-32.png" alt="">
-                    <input type="login" name= "usuário">
+                <div class="inputImg">
+                    <div>
+                        <img src="{% static 'img/user.png' %}" alt="">
+                    </div>
+                    <input type="login" name= "usuário" placeholder="Digite seu e-mail ou usuário">
                 </div>
                 
-                <div>
-                    <img src="/app/static/img/icons8-key-24.png" alt="">
-                    <input type="password" name= "senha">
+                <div class="inputImg">
+                    <div>
+                        <img src="{% static 'img/key.png' %}" alt="">
+                    </div>
+                    <input type="password" name= "senha" placeholder="Digite sua senha">
                 </div>
                 <button href="https://www.google.com" type="submit" value="Entrar">Entrar</button>
             </main>
         </main>
-        </form>
+    </form>
     
     {% endblock %}   
 </body>
