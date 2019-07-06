@@ -18,26 +18,28 @@
     <title>Demoday</title>
 </head>
 <body>
-    <section>
-        <a class="logo" href="">
-            <img src="{% static 'img/feminismo-logo.png' %}" alt="feminismo-logo"> 
-        </a>                   
-        <h1>Seja</h1>
-        <div>   
+    <nav>
+        <div class="logoImg">
+            <a class="logo" href="">
+                <img src="{% static 'img/feminismo-logo.png' %}" alt="feminismo-logo"> 
+            </a>                   
+            <h1>Seja</h1>
+        </div>
+
+        <div class="divLinks">
+                <a href="">Pontos de Ajuda</a>
+                <a href="">Especialistas</a>
+                <a href="">Depoimentos</a>
+                <a href="">Sobre Nós</a>
+        </div>
+
+        <div class="loginCadastro">   
             <a href="/login">Entrar</a>
+            <p>/</p>
             <a href="/cadastro">Cadastre-se</a>
         </div>
-    </section>
-    <nav>            
-        <div class="divLinks">
-            <a href="">Página Inicial</a>
-            <a href="">Pontos de Ajuda</a>
-            <a href="">Especialistas</a>
-            <a href="">Depoimentos</a>
-            <a href="">Cadastre-se</a>
-            <a href="">Sobre Nós</a>
-        </div>
-    </nav> 
+    </nav>
+
     {% block content %}
     
     {% endblock %}

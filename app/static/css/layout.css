@@ -2,84 +2,92 @@ body{
     margin: 0;
 }
 
-section{
+nav{
     background-color: #b35f86;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     position: relative;
     height: 100px;
+    width: 100%;
+}
+
+/* logo e titulo */
+
+
+nav .logoImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 10%;
 }
 
 /* logo de cima, mãozinha */
-section img{ 
+nav img{ 
     height: auto;
     width: 50px;
 }
 
 /* título */
-section h1{
-    justify-items: center;
+nav h1{
     font-family: 'Satisfy', cursive;
     color: white;
     font-size: 40px;
 }
 
+
+.divLinks{
+    font-family: 'Open Sans', sans-serif;
+    justify-content: flex-end;
+    display: flex;
+    width:60%;
+    margin-left: 20px;
+}
+
+.divLinks a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
 /* login */
-section div{
+nav .loginCadastro{
     display: flex;
     align-items: center;
     justify-content: space-around;
     width: 150px;
 }
 
-section div a{
+nav .loginCadastro a{
     text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-weight: bolder;
 }
-
-
-/* espaço para os links de acesso */
-
-nav{
-    background-color: rgba(252, 85, 246, 0.733);
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    height: 70px;
-    width: 100%;
-}
-
-nav div{
+nav .loginCadastro p{
     text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    height: 90%;
-    width: 70%;   
+    font-family: 'Open Sans', sans-serif;
+    color: white;
 }
 
-nav div a{
-    color: black;
-    font-size: 15px;
-    font-weight: bolder;   
-    text-decoration: none;
-}
-
-section{
-    width: 100%;
-}
 
 /* imagens no footer */
 footer{
     display: flex;
-    justify-content: center;
-    height: 90px   ;
+    justify-content: flex-start;
+    height: 70px   ;
     background-color: #FFA1CD;
 }
 
 footer div {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    width:30%;
+    width:20%;
+}
+
+footer div img{
+    height: 25px;
+    width: 25px;
 }
