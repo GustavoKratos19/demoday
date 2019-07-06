@@ -6,15 +6,15 @@ class CadastroForm(forms.ModelForm):
     class Meta:
         model = CadastroDeUsuario
         fields = [
-            'nome_usuario',
-            'email_usuario',
+            'nome',
+            'email',
             'usuario',
-            'data_nacimento_usuario',
-            'cpf_usuario',
-            'celular_usuario',
-            'genero_usuario',
-            'senha_usuario',
-            'foto_usuario',
+            'data_nacimento',
+            'cpf',
+            'celular',
+            'genero',
+            'senha',
+            'foto',
         ]
 
 class DepoimentosForm(forms.ModelForm):
