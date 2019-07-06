@@ -17,7 +17,7 @@ body{
     justify-content: space-around;
 }
 
-input{
+.loginClass input{
     background-color: white;
     margin-bottom: 10px;
     height: 30px;
@@ -43,6 +43,11 @@ input{
     height: 22px; 
 }
 
-button{
-    
+.inputImg input{
+    background-color: white;
+    margin-bottom: 10px;
+    height: 30px;
+    width: 300px;
+    text-align: center;
+    margin-left: 10px;
 }
