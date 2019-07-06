@@ -23,3 +23,6 @@ def mostrar_cadastro(request):
 def mostrar_login(request):
     return render(request, 'login.html')
 
+def mostrar_inicial(request):
+    return render(request, 'pagina_inicial.html')
+
