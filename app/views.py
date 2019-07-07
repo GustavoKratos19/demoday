@@ -26,3 +26,6 @@ def mostrar_login(request):
 def mostrar_inicial(request):
     return render(request, 'pagina_inicial.html')
 
+def mostrar_comunidade(request):
+    return render(request, 'comunidade.html')
+
