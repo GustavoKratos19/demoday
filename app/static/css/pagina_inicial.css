@@ -48,3 +48,9 @@ header{
     width: 40%;
     color: white;
 }
+
+section{
+    height: 500px;
+    width: 100%;
+    background-color: aquamarine;
+}
