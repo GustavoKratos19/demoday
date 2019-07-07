@@ -9,7 +9,7 @@ class CadastroForm(forms.ModelForm):
             'nome',
             'email',
             'usuario',
-            'data_nacimento',
+            'data_nascimento',
             'cpf',
             'celular',
             'genero',

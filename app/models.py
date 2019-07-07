@@ -11,7 +11,7 @@ class CadastroDeUsuario(models.Model):
     nome = models.CharField(max_length=100)
     email = models.EmailField(max_length=254)
     usuario = models.CharField(max_length=20)
-    data_nacimento = models.CharField(max_length=10)
+    data_nascimento = models.CharField(max_length=10)
     cpf = models.CharField(max_length=14)
     celular = models.CharField(max_length=14)
     genero = models.CharField(max_length=3, choices=genero_opcoes)
