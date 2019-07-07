@@ -15,21 +15,36 @@ header{
 /* espaço entre o titulo e a nav */
 
 #escuro{
-    background-color: rgba(0, 0, 0, 0.555);
+    background-color: rgba(0, 0, 0, 0.58);
     height: 100%;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.divFrases{
-    height: 190px;
-    width: auto;
+|#divFrases{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 } 
 
-.divFrases p{
+#divFrases p{
     font-family: 'Satisfy', 'cursive';
     font-size: 100px;
+    color: white;
+    margin-bottom: 0;
+}
+
+#escuro span{
+    width: 40vw;
+    height: 3px;
+    background-color: #4db34f;
+}
+
+#escuro #subtitle{
+    width: 40%;
     color: white;
 }
