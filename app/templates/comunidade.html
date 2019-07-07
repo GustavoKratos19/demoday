@@ -14,18 +14,30 @@
 </head>
 <body>
     {% block content %}
-    <main>
-        <div class="comunidadeClass">
-            <h2>Comunidade</h2>
-        </div>
+    <main class="mainClass">
+        <section>
+            <div class="comunidadeClass">
+                <h2>Comunidade</h2>
+            </div>
             <div class="depoimentoClass">
-                <textarea rows="20" cols="100" placeholder="Escreva seu depoimento"></textarea>
+                <textarea rows="15" cols="90" placeholder="Escreva seu depoimento"></textarea>
             </div>
             <div class="respostaClass">
-                <button type="submit" value="Responder">Responder</button>
-            </div>
+                <button type="submit" value="Responder">Enviar</button>
+
+            </div class="privacidadeClass">
+            <form name="input"action="html_form_action.asp"method="get">
+            Anônimo: 
+            <input type="radio" name="Privacity"value="anonimo" checked><br>
+            Público: 
+            <input type="radio" name="Privacity"value="publico"><br>
             
-    </main>
-    {% endblock %}
+        </form> 
+        <div>
+        </div>
+    </section>   
+    
+</main>
+{% endblock %}
 </body>
 </html>
