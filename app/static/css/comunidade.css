@@ -1,0 +1,24 @@
+body{
+    margin:0;
+    background-color:#ffcbe3
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+}
+
+.comunidadeClass{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.comunidadeClass h2{
+    font-family: 'Satisfy', cursive;
+    font-size: 30px;
+}
+
