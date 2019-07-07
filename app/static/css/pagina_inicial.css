@@ -1,3 +1,7 @@
+body{
+    margin: 0;
+}
+
 /* foto de background */
 
 header{
@@ -10,9 +14,10 @@ header{
     flex-direction: column;
     height: 690px;
     width: 100%;
+    margin: 0;
 }
 
-/* espaço entre o titulo e a nav */
+/* colocar o header escuro */
 
 #escuro{
     background-color: rgba(0, 0, 0, 0.58);
@@ -24,7 +29,9 @@ header{
     justify-content: center;
 }
 
-|#divFrases{
+/* escritas no header */
+
+#divFrases{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -47,10 +54,81 @@ header{
 #escuro #subtitle{
     width: 40%;
     color: white;
+    font-family: 'Open Sans', sans-serif;
 }
 
+/* parte do quem nós somos */
+
 section{
-    height: 500px;
+    height: 400px;
     width: 100%;
-    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section #divQuem{
+    font-family: 'Satisfy', 'cursive';
+}
+
+#divQuem p{
+    font-size:50px;
+    margin-bottom: 0;
+}
+
+#divTexto{
+    width: 70%;
+}
+
+#divTexto p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* Parte de depoimentos do site */
+
+main{
+    width: 100%;
+    height: 400px;
+    background-color: white;
+}
+
+#idDep{
+    font-family: 'Satisfy', 'sans-serif';
+    font-size: 50px;
+}
+
+/* parte de pontos de ajuda do site */
+
+ul{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#mapa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0;
+}
+
+#idTexto{
+    display: block;
+    width: 40%;
+}
+
+#idTexto p{
+    font-family: 'Satisfy', 'cursive';
+    font-size: 50px;
+    margin-bottom: 0;
+}
+
+#idTexto h4{
+    font-family: 'Open Sans', 'sans-serif';
+    font-size: 20px;
+    text-align: justify;
 }
