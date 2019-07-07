@@ -2,7 +2,7 @@
 {% load staticfiles %}
 
 <!DOCTYPE html>
-<html lang="py-br">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,10 +14,10 @@
     {% block content %}
     <main class="cadastro">
         <h2>Cadastro</h2>
-        <form action="POST">
+        <form method="POST">
             {% csrf_token %}
             {{ form }}
-            <button href='/comunidade' type="submit">Cadastar</button>                
+            <button type="submit">Cadastar</button>                
         </form>
         <div>
             <a href="/pagina_inicial">Voltar</a>
