@@ -1,13 +1,14 @@
 body{
+    padding: 0;
     margin:0;
     background-color:#ffcbe3
 }
 
-main{
+.mainClass{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 500px;
+    height: 600px;
 }
 
 .comunidadeClass{
@@ -15,6 +16,7 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+
 }
 
 .comunidadeClass h2{
@@ -22,3 +24,50 @@ main{
     font-size: 30px;
 }
 
+.depoimentoClass{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+}
+
+.respostaClass{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 100px;
+    width: 50px;
+}
+
+.respostaClass button{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 80px;
+    margin-right: 1000px;
+}
+
+.privacidadeClass{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 500px;
+}
+
+.privacidadeClass form{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 500px;
+}
+
+.privacidadeClass div{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-right: 500px;
+    width: 530px;
+}
+
+.privacidadeClass input{
+    display: flex;
+    justify-content: flex-start;
+}
