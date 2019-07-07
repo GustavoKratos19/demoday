@@ -37,7 +37,11 @@
                     </div>
                     <input type="password" name= "senha" placeholder="Digite sua senha">
                 </div>
-                <button href="https://www.google.com" type="submit" value="Entrar">Entrar</button>
+                    <form action="POST">
+                    {% csrf_token %}
+                    {{ form }}
+                    <button type="submit" value="Entrar">Entrar</button>
+                    </form>
             </main>
         </main>
     </form>    
