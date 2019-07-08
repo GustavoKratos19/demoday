@@ -2,6 +2,10 @@ body{
     margin: 0;
 }
 
+nav{
+    position: fixed;
+}
+
 /* foto de background */
 
 header{
@@ -12,7 +16,7 @@ header{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 690px;
+    height: 753px;
     width: 100%;
     margin: 0;
 }
