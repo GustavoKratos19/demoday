@@ -29,3 +29,6 @@ def mostrar_inicial(request):
 def mostrar_comunidade(request):
     return render(request, 'comunidade.html')
 
+def mostrar_sobre(request):
+    return render(request, 'sobre.html')
+
