@@ -1,14 +1,12 @@
 from django.shortcuts import render
-from app.froms import CadastroForm
-from app.froms import DepoimentosForm
+from app.forms import CadastroForm
+from app.forms import DepoimentosForm
 
 # Create your views here.
 
-def mostrar_layout(request):
-    return render(request, 'layout.html')
 
 def mostrar_cadastro(request):
-    formulario = CadastroForm(request.POST or None)
+    formulario = CadastroForm(request.POST or None, request.FILES)
     menssagem = ''
     if formulario.is_valid():
         formulario.save()
