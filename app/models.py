@@ -19,7 +19,7 @@ class CadastroDeUsuario(models.Model):
     foto = models.ImageField(upload_to='')
 
     def __str__(self):
-        return self.nome_usuario
+        return self.nome
 
 class DepoimentosUsuario(models.Model):
     titulo_depoimento = models.CharField(max_length=40)
