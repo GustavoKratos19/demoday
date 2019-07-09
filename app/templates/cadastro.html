@@ -14,16 +14,19 @@
     {% block content %}
     <main class="cadastro">
         <h2>Cadastro</h2>
+        {% if mensagem %}
+        <p>{{ mensagem }}</p>
+        {% endif %}
         <form method="POST">
             {% csrf_token %}
             {{ form }}
             <button type="submit">Cadastar</button>                
         </form>
         <div>
-            <a href="/pagina_inicial">Voltar</a>
+            <a href="/">Voltar</a>
             <a href="/login">Entrar</a>
         </div>
     </main>
-    {% endblock  %}    
+    {% endblock %}    
 </body>
 </html>

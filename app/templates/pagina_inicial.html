@@ -1,4 +1,3 @@
-{% extends 'layout.html' %}
 {% load staticfiles %}
 
 <!DOCTYPE html>
@@ -7,54 +6,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="{% static 'css/pagina_inicial.css' %}">
-    <link rel="shortcut icon" href="{% static 'img/feminismo-logo.png' %}">
-    <title>Pagina Inicial</title>
+    <link rel="shortcut icon" href="{% static 'img/feminismo-logo.png' %}">  
+    <link rel="stylesheet" href="{% static 'css/pagina_inicial.css' %}">     
+    <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="{% static 'scripts/pagina_inicial.js' %}"></script>
+    <title>Seja</title>
 </head>
 <body>
-    {% block content %}    
+    <nav id="antes">
+        <div class="logoImg">
+            <a class="logo" href="/">
+                <img src="{% static 'img/feminismo-logo.png' %}" alt="feminismo-logo">                            
+                <h1>Seja</h1>
+            </a>   
+        </div>        
+        <div class="divLinks">
+            <a href="">Pontos de Ajuda</a>
+            <a href="/comunidade">Comunidade</a>
+            <a href="">Depoimentos</a>
+            <a href="/sobre">Sobre Nós</a>
+        </div>        
+        <div class="loginCadastro">   
+            <a href="/login">Entrar</a>
+            <p>/</p>
+            <a href="/cadastro">Cadastre-se</a>
+        </div>
+    </nav>
     <header>
         <main id="escuro">
             <div id="divFrases">
                 <p>Seja</p>
             </div>
-            
             <span></span>
-            
             <div id="subtitle">
                 <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis illo ullam dolor molestiae quos quis, fugiat mollitia rem quibusdam blanditiis accusamus sint iste culpa explicabo quae voluptatibus! Itaque, deleniti ut!</h3>
             </div>
         </main>
     </header>
-    
     <section>
         <div id="divQuem">
             <p>Quem nós somos?</p>
         </div>
-        
         <div id="divTexto">
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora, libero aperiam provident vitae nam ducimus quisquam deserunt soluta veniam, autem eaque aut, odit consectetur. Facilis, sequi. Officiis ipsum nulla doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, cumque omnis nemo reiciendis deserunt, quos facilis natus blanditiis iusto fuga ullam voluptatem aliquam ab odit cum aperiam necessitatibus molestias quibusdam!</p>
         </div>
     </section>
-    
-    
     <main id="mainDep">
         <div id="idDep">
             <p>Depoimentos</p>
         </div>
     </main>
-    
     <aside>
         <div id="idTexto">
             <p>Pontos de Ajuda</p>
-            
             <h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda, nemo dolorem sint a consequuntur maiores reprehenderit labore, tempore at laudantium eveniet, quo nisi eligendi molestiae quis autem necessitatibus. Maiores, magnam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum nobis ducimus voluptatibus consequatur magnam dolore, obcaecati maiores quasi, voluptate reprehenderit hic adipisci, repellendus doloribus sed molestiae!</h4>
         </div>
-        
         <div id="mapa">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1483.1223265640851!2d-46.65561066462782!3d-23.562957479252287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8e70065e9%3A0x3212f92921c32582!2sAv.+Paulista%2C+1374!5e0!3m2!1sen!2sbr!4v1562467498234!5m2!1sen!2sbr" width="600" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
     </aside>
-    {% endblock %}    
+    <footer>
+        <div>
+            <a href="https://www.facebook.com/quebreo.silencio.31"><img src="{% static 'img/facebook.png' %}" alt="Facebook"></a>
+            <a href=""><img src="{% static 'img/instagram.png' %}" alt="Instagram"></a>
+            <a href=""><img src="{% static 'img/twitter.png' %}" alt="Twitter"></a>
+        </div>
+    </footer>
 </body>
 </html>

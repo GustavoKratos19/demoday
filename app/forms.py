@@ -3,6 +3,7 @@ from app.models import CadastroDeUsuario
 from app.models import DepoimentosUsuario
 
 class CadastroForm(forms.ModelForm):
+    senha = forms.CharField(widget=forms.PasswordInput(), max_length=23)
     class Meta:
         model = CadastroDeUsuario
         fields = [
