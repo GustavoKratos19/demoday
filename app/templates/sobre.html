@@ -12,16 +12,33 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <title>Sobre nós</title>
 </head>
-    {% block content %}
-    <main class="mainsobreClass">
+{% block content %}
+<main class="sobreClass">
+    <section>
         <div>
             <p>Sobre a equipe</p>
-            <a class="dani" href=""><img src="{% static 'img/dani.jpg' %}" alt="foto da dani"></a>
-            
         </div>
-
-    </main>
-    {% endblock %}
+        <div class="equipeClass">
+            <img src="{% static 'img/equipe.jpg' %}" alt="foto da equipe">
+        </div>
+        <div class="textoClass">
+            <h2>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora, libero aperiam provident vitae nam ducimus quisquam deserunt soluta veniam, autem eaque aut, odit consectetur. Facilis, sequi. Officiis ipsum nulla doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, cumque omnis nemo reiciendis deserunt, quos facilis natus blanditiis iusto fuga ullam voluptatem aliquam ab odit cum aperiam necessitatibus molestias quibusdam.
+            </h2>
+        </div>
+        <div class="sociaisClass">
+            <a href=""><img src="{% static 'img/github.png' %}" alt="github"></a>
+            <a href=""><img src="{% static 'img/email.png' %}" alt="email"></a>
+        </div>
+    </section>
+    <aside>
+        <p>Sobre o projeto</p>
+        <h2>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora, libero aperiam provident vitae nam ducimus quisquam deserunt soluta veniam, autem eaque aut, odit consectetur. Facilis, sequi. Officiis ipsum nulla doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, cumque omnis nemo reiciendis deserunt, quos facilis natus blanditiis iusto fuga ullam voluptatem aliquam ab odit cum aperiam necessitatibus molestias quibusdam.
+        </h2>
+    </aside>
+</main>
+{% endblock %}
 <body>
     
 </body>
