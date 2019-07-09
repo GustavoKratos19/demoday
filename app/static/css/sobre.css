@@ -1,43 +1,58 @@
 body{
     margin:0;
-    background-color:#ffcbe3
+    background-color:#ffcbe3;
+    height: 100vh;
 }
 
-.mainsobreClass{
+section{
     display: flex;
-    align-items: center;
     justify-content: space-around;
+    align-items: center;
 }
-
-.mainsobreClass div{
+section div{
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
+    justify-content: center;
+    align-items: center;
 
-.mainsobreClass p{
+}
+section p{
+    display: flex;
+    justify-content:center;
+    text-align: justify; 
     font-family: 'Satisfy', cursive;
     font-size: 30px;
-}
-
-.mainsobreClass a{
     height: 5px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    margin: 50px;
 }
 
-.mainsobreClass .dani{
+.equipeClass{
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    height: 50px;
-    width: 100px;
+    justify-content: center;
+    align-items: center;
 }
 
-.mainsobreClass img{
+.equipeClass img{
     display: flex;
-    align-items: space-around;
-    border-radius: 800px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    height: 160px;
+    width: 285px;
+    margin: 10px;
+}
+
+.socialClass{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.equipeClass a img{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 30px;
+    height: 20px;
 }
 
