@@ -1,0 +1,43 @@
+body{
+    margin:0;
+    background-color:#ffcbe3
+}
+
+.mainsobreClass{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.mainsobreClass div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.mainsobreClass p{
+    font-family: 'Satisfy', cursive;
+    font-size: 30px;
+}
+
+.mainsobreClass a{
+    height: 5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.mainsobreClass .dani{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 50px;
+    width: 100px;
+}
+
+.mainsobreClass img{
+    display: flex;
+    align-items: space-around;
+    border-radius: 800px;
+}
+
