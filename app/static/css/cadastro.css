@@ -35,8 +35,10 @@ body{
 
 .cadastro select{
     background-color: white;
-    width: 170px;
+    width: 270px;
     margin: 5px;
+    height: 25px;
+    border-radius: 5px;
     border: 0;
 }
 
