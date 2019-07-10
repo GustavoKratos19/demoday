@@ -8,6 +8,7 @@ section{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    height: 500px;
 }
 section div{
     display: flex;
@@ -23,6 +24,7 @@ section h2{
     height: 5px;
     padding: 10px;
     margin: 50px;
+    margin-top: 150px;
 }
 
 .equipeClass{
@@ -36,17 +38,20 @@ section h2{
     justify-content: center;
     align-items: center;
     border-radius: 30px;
-    height: 180px;
-    width: 300px;
+    height: 300px;
+    width: 600px;
     margin: 10px;
     padding: 0;
 }
 
-.socialClass{
+.sociaisClass{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-direction: column;
+}
+
+.sociaisClass p{
+    margin-left: 20px;
 }
 
 .equipeClass a img{
@@ -61,19 +66,21 @@ section h2{
     display: flex;
     justify-content: space-around;
     text-align: justify;
+    height: 200px;
+    width: 1160px;
 }
 
 .textoClass p{
     font-family: 'Open Sans', 'sans-serif';
     font-size: 18px;
-    margin 10px;
-    padding: 15px;
 }
 
 aside{
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
     align-items: center;
+    height: 250px;
+    margin-top: 100px;
 }
 
 aside div{
@@ -87,9 +94,7 @@ aside div h2{
     text-align: justify; 
     font-family: 'Satisfy', cursive;
     font-size: 30px;
-    height: 5px;
-    padding: 10px;
-    margin: 50px;
+    margin-bottom: 0;
 }
 
 .projetoClass{
@@ -97,13 +102,12 @@ aside div h2{
     justify-content: center;
     align-items: center;
 }
-.projetoClass h2{
+.projetoClass p{
     display: flex;
     justify-content:center;
     text-align: justify; 
-    font-family: 'Satisfy', cursive;
-    font-size: 30px;
-    height: 5px;
-    padding: 10px;
-    margin: 50px;
+    font-family: 'Open Sans', 'sans-serif';
+    font-size: 18px;
+    width: 1160px;
+    margin-top: 0;
 }
