@@ -3,7 +3,6 @@ body{
     background-color:#ffcbe3;
     font-family: 'Open Sans', sans-serif;
     font-size: 11pt;
-    
 }
 
 .cadastro{
@@ -11,7 +10,7 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 1100px;
+    height: 780px;
 }
 
 .cadastro h2{
@@ -26,15 +25,19 @@ body{
 }
 
 .cadastro input{
+    border-radius: 5px;
     background-color: white;
     margin: 5px;
     width: 270px;
+    height: 25px;
+    border: 0;
 }
 
 .cadastro select{
     background-color: white;
     width: 170px;
     margin: 5px;
+    border: 0;
 }
 
 .cadastro button{
