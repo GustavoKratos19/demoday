@@ -14,8 +14,11 @@ body{
     position: fixed;
     transition: all 0.3s ease-in-out;
     opacity: 0.9;
-    
-    
+}
+
+#subtitle {
+    display: flex;
+    justify-content: center;
 }
 
 #depois {
@@ -71,7 +74,9 @@ nav h1{
     text-decoration: none;
     margin-left: 35px;
 }
-
+.divLinks a:hover{
+border-bottom: 2px solid #4db34f;
+}
 /* login */
 nav .loginCadastro{
     display: flex;
