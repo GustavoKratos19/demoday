@@ -6,15 +6,15 @@ from app.forms import DepoimentosForm
 
 
 def mostrar_cadastro(request):
-    formulario = CadastroForm(request.POST or None, request.FILES)
+    formulario = CadastroForm(request.POST or None, request.FILES or None)
     menssagem = ''
     if formulario.is_valid():
         formulario.save()
         formulario = CadastroForm
-        menssagem = 'Cadastro realizado com sucesso'
+        mensagem = 'Cadastro realizado com sucesso'
     contexto = {
         'form' : formulario,
-        'menssagem' : menssagem,
+        'mensagem' : menssagem,
     }
     return render(request, 'cadastro.html', contexto)
 
