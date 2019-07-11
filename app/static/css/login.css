@@ -7,7 +7,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 425px;
 }
 
 .loginClass{
@@ -17,11 +17,13 @@ body{
 }
 
 .loginClass input{
-    margin-bottom: 0px;
-    height: 30px;
-    width: 300px;
+    background-color: white;
+    width: 270px;
+    margin: 5px;
+    height: 25px;
+    border-radius: 5px;
+    border: 0;
     text-align: center;
-    margin-left: 10px;
 }
 
 .loginClass div h2{
@@ -31,7 +33,7 @@ body{
 
 .inputImg{
     display: flex;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
     align-items: center;
     justify-content: center;
 }
@@ -42,10 +44,11 @@ body{
 }
 
 .inputImg input{
-    background-color: white;
+    width: 270px;
+    margin: 5px;
     margin-bottom: 10px;
-    height: 30px;
-    width: 300px;
+    height: 25px;
+    border-radius: 5px;
+    border: 0;
     text-align: center;
-    margin-left: 10px;
 }
