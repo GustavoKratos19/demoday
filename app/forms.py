@@ -30,7 +30,7 @@ class DepoimentosForm(forms.ModelForm):
             'foto_depoimento',
         ]
 
-class EntraForm(forms.ModelForm):
+class EntrarForm(forms.ModelForm):
     class Meta:
         model = Entrar
         fields = [
