@@ -25,23 +25,22 @@
                 <div>
                     <h2>Login</h2>
                 </div>
-                <div class="inputImg">
-                    <div>
-                        <img src="{% static 'img/user.png' %}" alt="">
-                    </div>
-                    <input type="login" name= "usuário" placeholder="Digite seu e-mail ou usuário">
-                </div>                
-                <div class="inputImg">
-                    <div>
-                        <img src="{% static 'img/key.png' %}" alt="">
-                    </div>
-                    <input type="password" name= "senha" placeholder="Digite sua senha">
-                </div>
-                    <form action="POST">
+                <form action="POST">
                     {% csrf_token %}
-                    {{ form }}
+                    <div class="inputImg">
+                        <div>
+                            <img src="{% static 'img/user.png' %}" alt="">
+                        </div>
+                        <input type="login" name= "usuário" placeholder="Digite seu e-mail ou usuário">
+                    </div>                
+                    <div class="inputImg">
+                        <div>
+                            <img src="{% static 'img/key.png' %}" alt="">
+                        </div>
+                        <input type="password" name= "senha" placeholder="Digite sua senha">
+                    </div>
                     <button type="submit" value="Entrar">Entrar</button>
-                    </form>
+                </form>
             </main>
         </main>
     </form>    
