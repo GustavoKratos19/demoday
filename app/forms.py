@@ -1,7 +1,6 @@
 from django import forms
 from app.models import CadastroDeUsuario
 from app.models import DepoimentosUsuario
-from app.models import Entrar
 
 class CadastroForm(forms.ModelForm):
     class Meta:
@@ -30,14 +29,6 @@ class DepoimentosForm(forms.ModelForm):
             'foto_depoimento',
         ]
 
-class EntrarForm(forms.ModelForm):
-    class Meta:
-        model = Entrar
-        fields = [
-            'usuario',
-            'email',
-            'senha',
-        ]
-        widgets = {
-            'senha': forms.PasswordInput(),
-        }
+class EntrarForm(forms.Form):
+    usuario = forms.CharField(max_length=40)
+    senha = forms.CharField(max_length=23, widget= forms.PasswordInput)
