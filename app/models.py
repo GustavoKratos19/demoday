@@ -3,9 +3,9 @@ from django.db import models
 # Create your models here.
 class CadastroDeUsuario(models.Model):
     genero_opcoes = [
+        ('---', '----------------------'),
         ('fem', 'Feminino'),
-        ('mas', 'Masculino'),
-        ('otr', 'Outros')
+        ('otr', 'Outros'),
     ]
 
     nome = models.CharField(max_length=100, default='')
@@ -22,9 +22,16 @@ class CadastroDeUsuario(models.Model):
         return self.nome
 
 class DepoimentosUsuario(models.Model):
+    tipo_depoimento = [
+        ('', ''),
+        ('pu', 'Público'),
+        ('pv', 'Privado'),
+    ]
+
     titulo_depoimento = models.CharField(max_length=40, default='')
     depoimento = models.TextField(default='')
-    foto_depoimento = models.ImageField(upload_to='')
+    imagem = models.ImageField(upload_to='')
+    tipo = models.CharField(max_length=2, choices=tipo_depoimento, default='')
     nome = models.ForeignKey(CadastroDeUsuario, on_delete=models.SET_DEFAULT, default='')
 
     def __str__(self):
