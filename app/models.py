@@ -29,7 +29,3 @@ class DepoimentosUsuario(models.Model):
 
     def __str__(self):
         return self.titulo_depoimento
-
-class Entrar(models.Model):
-    usuario = models.CharField(max_length=40, default='')
-    senha = models.CharField(max_length=23, default='')
