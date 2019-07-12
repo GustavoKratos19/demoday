@@ -1,3 +1,4 @@
+// transparência da nav
 window.onscroll = scroll;
 
 function scroll() {
