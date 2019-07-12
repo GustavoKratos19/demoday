@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from app.forms import CadastroForm
 from app.forms import DepoimentosForm
 from app.forms import EntrarForm
+from app.forms import DepoimentosForm
 from app.models import CadastroDeUsuario
 from django.views.decorators.csrf import csrf_exempt
 
@@ -49,7 +50,19 @@ def mostrar_inicial(request):
     return render(request, 'pagina_inicial.html')
 
 def mostrar_comunidade(request):
-    return render(request, 'comunidade.html')
+    depoimentos = DepoimentosForm(request.POST or None, request.FILES or None)
+    menssagem = ''
+    if request.method == 'POST':
+        if depoimentos.is_valid():
+            depoimentos.save()
+            depoimentos = DepoimentosForm
+            mensagem = 'Depoimento enviado com sucesso'
+    
+    contexto = {
+        'form' : depoimentos,
+        'mensagem' : menssagem,
+    }
+    return render(request, 'comunidade.html', contexto)
 
 def mostrar_sobre(request):
     return render(request, 'sobre.html')
