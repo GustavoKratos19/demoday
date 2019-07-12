@@ -3,52 +3,47 @@ body{
     background-color:#ffcbe3
 }
 
-.mainLogin{
+#entrar{
     display: flex;
     align-items: center;
     justify-content: center;
     height: 80vh;
 }
 
-.loginClass{
+#entrar h2{
+    font-family: 'Satisfy', cursive;
+}
+
+#entrar form{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
 }
 
-.loginClass input{
+#entrar input{
+    border-radius: 5px;
     background-color: white;
-    width: 270px;
-    margin: 5px;
-    height: 25px;
-    border-radius: 5px;
-    border: 0;
     text-align: center;
+    margin: 5px;
+    width: 270px;
+    height: 25px;
+    border: 0;
 }
 
-.loginClass div h2{
-    font-family: 'Satisfy', cursive;
-    font-size: 30px;
+#entrar button{
+    margin-top: 5px;
 }
 
-.inputImg{
+#entrar div{
     display: flex;
-    /* margin-bottom: 30px; */
+    justify-content: space-around;
     align-items: center;
-    justify-content: center;
+    width: 100px
 }
 
-.inputImg img{
-    width: 22px;
-    height: 22px; 
-}
-
-.inputImg input{
-    width: 270px;
-    margin: 5px;
-    margin-bottom: 10px;
-    height: 25px;
-    border-radius: 5px;
-    border: 0;
-    text-align: center;
+#entrar div a{
+    color: black;
+    text-decoration: none;
+    margin-top: 5px;
 }
