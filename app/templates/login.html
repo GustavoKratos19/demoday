@@ -17,33 +17,20 @@
 </head>
 <body>    
     {% block content %}
-    <form action="POST">
-        {% csrf_token %}        
-        {{ form }}        
-        <main class="mainLogin">
-            <main class="loginClass">
-                <div>
-                    <h2>Login</h2>
-                </div>
-                <form action="POST">
-                    {% csrf_token %}
-                    <div class="inputImg">
-                        <div>
-                            <img src="{% static 'img/user.png' %}" alt="">
-                        </div>
-                        <input type="login" name= "usuário" placeholder="Digite seu e-mail ou usuário">
-                    </div>                
-                    <div class="inputImg">
-                        <div>
-                            <img src="{% static 'img/key.png' %}" alt="">
-                        </div>
-                        <input type="password" name= "senha" placeholder="Digite sua senha">
-                    </div>
-                    <button type="submit" value="Entrar">Entrar</button>
-                </form>
-            </main>
-        </main>
-    </form>    
+    <main id="entrar">
+        <h2>Entrar</h2>
+        {% if msg %}
+        <p>{{ msg }}</p>
+        {% endif %}        
+        <form method="POST">
+            {% csrf_token %}
+            {{ form }}
+            <button type="submit">Entrar</button>
+        </form>
+        <div>
+            <a href="/">Voltar</a>
+        </div>
+    </main>
     {% endblock %}   
 </body>
 </html>
