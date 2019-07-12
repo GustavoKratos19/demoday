@@ -129,9 +129,8 @@ header{
 
 #divFrases{
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 } 
 
 #divFrases p{
@@ -139,6 +138,7 @@ header{
     font-size: 100px;
     color: white;
     margin-bottom: 0;
+    margin: 15px;
 }
 
 #escuro span{
