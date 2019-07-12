@@ -25,6 +25,7 @@ body{
 #entrar input{
     border-radius: 5px;
     background-color: white;
+    text-align: center;
     margin: 5px;
     width: 270px;
     height: 25px;
