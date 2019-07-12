@@ -14,8 +14,22 @@
 </head>
 <body>
     {% block content %}
-    <main class="mainClass">
-        
+    <main class="comunidade">
+        <h2>Comunidade</h2>
+        {% if mensagem %}
+        <p>{{ mensagem }}</p>
+        {% endif %}
+        <form method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form }}            
+            <div id="btn">
+                <button type="submit">Postar</button>
+                <button type="reset">Limpar</button>             
+            </div>
+        </form>
+        <div>
+            <a href="/">Voltar</a>
+        </div>
     </main>
     {% endblock %}
 </body>
