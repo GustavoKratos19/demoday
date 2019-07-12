@@ -26,7 +26,8 @@ class DepoimentosForm(forms.ModelForm):
         fields = [
             'titulo_depoimento',
             'depoimento',
-            'foto_depoimento',
+            'imagem',
+            'tipo',
         ]
 
 class EntrarForm(forms.Form):
