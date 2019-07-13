@@ -14,6 +14,10 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <script src="{% static 'js/pagina_inicial.js' %}" defer></script>
     <script src="{% static 'js/p_troca_frase.js' %}" defer></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous" defer></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous" defer></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous" defer></script>
     <title>Seja</title>
 </head>
 <body>
@@ -44,7 +48,7 @@
             </div>
             <span></span>
             <div id="subtitle">
-                <h3>"Podando os seus males você consegue florir."</h3>
+                <p>"Podando os seus males você consegue florir."</p>
             </div>
         </main>
     </header>
@@ -56,70 +60,59 @@
             <div id="divTexto">
                 <p id="textoinicial">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora, libero aperiam provident vitae nam ducimus quisquam deserunt soluta veniam, autem eaque aut, odit consectetur. Facilis, sequi. Officiis ipsum nulla doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, cumque omnis nemo reiciendis deserunt, quos facilis natus blanditiis iusto fuga ullam voluptatem aliquam ab odit cum aperiam necessitatibus molestias quibusdam!</p>
             </div>
-        </section></a>
-        
-        <main id="mainDep">
-            <div id="depTitulo">
-                <a name="depoimentos"> <p>Depoimentos</p></a>
-            </div>
-            
-            <div id="demo" class="carousel slide" data-ride="carousel">
-                
-                <!-- Indicators -->
-                <ul class="carousel-indicators">
-                    <li data-target="#demo" data-slide-to="0" class="active"></li>
-                    <li data-target="#demo" data-slide-to="1"></li>
-                    <li data-target="#demo" data-slide-to="2"></li>
-                </ul>
-                
-                <!-- The slideshow -->
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio tempore deleniti magnam eveniet itaque voluptas perspiciatis sequi obcaecati tempora quibusdam illo eius necessitatibus, accusantium molestiae minima iste est porro ducimus?</p>
-                    </div>
-                    <div class="carousel-item">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus quos magni amet iusto consequuntur inventore ut illo culpa, repellat laborum earum, sint provident reiciendis! Minima in molestias neque repellendus ullam.</p>
-                    </div>
-                    <div class="carousel-item">
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni quo necessitatibus quam alias obcaecati. Aliquam molestias cupiditate delectus perspiciatis nam possimus expedita corrupti quam quas? Omnis voluptate ex ea quod!</p>
-                    </div>
+        </section>
+    </a>
+    <main id="mainDep">
+        <div id="depTitulo">
+            <a name="depoimentos"> <p>Depoimentos</p></a>
+        </div>
+        <div id="demo" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio tempore deleniti magnam eveniet itaque voluptas perspiciatis sequi obcaecati tempora quibusdam illo eius necessitatibus, accusantium molestiae minima iste est porro ducimus?</p>
                 </div>
-                
-                <!-- Left and right controls -->
-                <a class="carousel-control-prev" href="#demo" data-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                </a>
-                <a class="carousel-control-next" href="#demo" data-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                </a>
-                
+                <div class="carousel-item">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus quos magni amet iusto consequuntur inventore ut illo culpa, repellat laborum earum, sint provident reiciendis! Minima in molestias neque repellendus ullam.</p>
+                </div>
+                <div class="carousel-item">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni quo necessitatibus quam alias obcaecati. Aliquam molestias cupiditate delectus perspiciatis nam possimus expedita corrupti quam quas? Omnis voluptate ex ea quod!</p>
+                </div>
             </div>
-        </main>
-        
-        <aside>
-            <div id="idTexto">
-                <p>Pontos de Ajuda</p>
-                <h4>Em casos de agressões físicas é preciso ligar para a policia militar por meio do número 190.
-                    Todas as delegacias no Brasil podem registrar um boletim de ocorrência por violência doméstica, crime amparado pela lei Maria da Penha.
-                    Caso se sinta mais confortável, busque por uma Delegacia da Mulher mais próxima de você. Aqui você pode pesquisar a que fica mais próxima e os horários de atendimento. O atendimento especializado funciona em todos os estados brasileiros e é possível pedir uma medida protetiva de urgência em qualquer delegacia.
-                    Demais denúncias podem ser feitas pelo Disque 180, serviço que envia o caso ao Ministério Público e dá orientações jurídicas e de saúde. O número funciona todos os dias da semana e inclusive em feriados.
-                </h4>
-            </div>
-            <div id="mapa">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.56931686682!2d-46.6336518849441!3d-23.547987966983825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59000d33e669%3A0x624bf41fb97a2765!2s1%C2%B0+Delegacia+de+Defesa+da+Mulher!5e0!3m2!1spt-BR!2sbr!4v1563038372837!5m2!1spt-BR!2sbr" width="600" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
-            </div>
-        </aside>
-        <footer>
-            <div>
-                <a href="https://www.facebook.com/quebreo.silencio.31"><img src="{% static 'img/facebook.png' %}" alt="Facebook"></a>
-                <a href=""><img src="{% static 'img/instagram.png' %}" alt="Instagram"></a>
-                <a href=""><img src="{% static 'img/twitter.png' %}" alt="Twitter"></a>
-            </div>
-        </footer>
-        
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://code.jquery.com/jquery-3.4.1.js" ></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    </body>
-    </html>
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </main>
+    <aside>
+        <div id="idTexto">
+            <p>Pontos de Ajuda</p>
+            <h4>Em casos de agressões físicas é preciso ligar para a policia militar por meio do número 190.
+                Todas as delegacias no Brasil podem registrar um boletim de ocorrência por violência doméstica, crime amparado pela lei Maria da Penha.
+                Caso se sinta mais confortável, busque por uma Delegacia da Mulher mais próxima de você. Aqui você pode pesquisar a que fica mais próxima e os horários de atendimento. O atendimento especializado funciona em todos os estados brasileiros e é possível pedir uma medida protetiva de urgência em qualquer delegacia.
+                Demais denúncias podem ser feitas pelo Disque 180, serviço que envia o caso ao Ministério Público e dá orientações jurídicas e de saúde. O número funciona todos os dias da semana e inclusive em feriados.
+            </h4>
+        </div>
+        <div id="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.56931686682!2d-46.6336518849441!3d-23.547987966983825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59000d33e669%3A0x624bf41fb97a2765!2s1%C2%B0+Delegacia+de+Defesa+da+Mulher!5e0!3m2!1spt-BR!2sbr!4v1563038372837!5m2!1spt-BR!2sbr" width="600" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+    </aside>
+    <footer>
+        <div>
+            <a href="https://www.facebook.com/quebreo.silencio.31"><img src="{% static 'img/facebook.png' %}" alt="Facebook"></a>
+            <a href=""><img src="{% static 'img/instagram.png' %}" alt="Instagram"></a>
+            <a href=""><img src="{% static 'img/twitter.png' %}" alt="Twitter"></a>
+        </div>
+    </footer>       
+</body>
+</html>
