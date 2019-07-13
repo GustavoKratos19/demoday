@@ -3,7 +3,7 @@ from django.db import models
 # Create your models here.
 class CadastroDeUsuario(models.Model):
     genero_opcoes = [
-        ('---', '----------------------'),
+        ('', ''),
         ('fem', 'Feminino'),
         ('otr', 'Outros'),
     ]

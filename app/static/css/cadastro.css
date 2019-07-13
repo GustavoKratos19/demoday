@@ -33,6 +33,11 @@ body{
     border: 0;
 }
 
+.cadastro input[type=file] {
+    height: auto;
+    border-radius: 0;
+}
+
 .cadastro select{
     background-color: white;
     width: 270px;
@@ -44,6 +49,10 @@ body{
 
 .cadastro button{
     margin-top: 5px;
+}
+
+#btn{
+    width: 150px;
 }
   
 .cadastro div{
