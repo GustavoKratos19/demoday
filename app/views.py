@@ -69,3 +69,6 @@ def mostrar_sobre(request):
 
 def mostrar_usuario(request):
     return render(request, 'usuario.html')
+
+def mostrar_saiba(request):
+    return render(request, 'saiba.html')
