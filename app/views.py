@@ -67,5 +67,5 @@ def mostrar_comunidade(request):
 def mostrar_sobre(request):
     return render(request, 'sobre.html')
 
-def mostrar_usuario(request):
-    return render(request, 'usuario.html')
+def mostrar_painel_usuario(request):
+    return render(request, 'painel_usuario.html')
