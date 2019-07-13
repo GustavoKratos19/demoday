@@ -72,3 +72,7 @@ def mostrar_usuario(request):
 
 def mostrar_saiba(request):
     return render(request, 'saiba.html')
+
+def mostrar_painel_usuario(request):
+    return render(request, 'painel_usuario.html')
+
