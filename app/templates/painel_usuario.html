@@ -1,0 +1,32 @@
+{% extends 'usuario.html' %}
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{% static 'css/painel_usuario.css' %}">
+    <title>Painel Usuário</title>
+</head>
+<body>
+    {% block content %}
+    <main>
+        <div id="fundo">
+            <div id="painel">
+                <div id="x">
+                    <img src="https://2.bp.blogspot.com/-nhqCEygW4Wo/V1XtDiduY9I/AAAAAAAAAts/Q_g88fix6EgGtuTDyLQb7riYb7574xS_ACLcB/s400/Marvel%2BFaces%2B-%2BGIF.gif" alt="foto do usuario">
+                    <p>Herois da Marvel</p>
+                </div>                                
+                <div id="y">
+                    <div id="escuroX">
+                        <p>"Nunca deixe que uma crítica derrube aquilo que você construiu. Quem te define é o teu caráter, e não a opinião dos outros".</p>
+                    </div>                    
+                </div>                                
+            </div>
+        </div>        
+    </main>
+    {% endblock %}        
+</body>
+</html>
