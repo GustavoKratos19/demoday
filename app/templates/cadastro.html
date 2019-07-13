@@ -20,8 +20,10 @@
         <form method="POST" enctype="multipart/form-data">
             {% csrf_token %}
             {{ form }}
-            <button type="submit">Cadastar</button>
-            <button type="reset">Limpar</button>             
+            <div id="btn">
+                <button type="submit">Cadastrar</button>
+                <button type="reset">Limpar</button> 
+            </div>            
         </form>
         <div>
             <a href="/">Voltar</a>
