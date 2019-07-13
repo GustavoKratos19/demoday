@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    let frases = ['Incrível', 'Forte', 'Poderosa', 'Confiante', 'Empoderada', 'Resistência' ];
+    let frases = ['incrível', 'forte', 'poderosa', 'confiante', 'empoderada', 'resistência' ];
     let cont = 0;
 
     $('#troca').text(frases[cont++]);
