@@ -41,7 +41,7 @@ def mostrar_login(request):
                 }
                 return render(request, 'login.html', args)
             else:
-                return redirect('/usuario')    
+                return redirect('/painel_usuario')    
     
    
     return render(request, 'login.html', {'form': entrar})
