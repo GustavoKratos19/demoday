@@ -41,7 +41,7 @@ def mostrar_login(request):
                 }
                 return render(request, 'login.html', args)
             else:
-                return redirect('/comunidade/')    
+                return redirect('/usuario')    
     
    
     return render(request, 'login.html', {'form': entrar})
@@ -66,3 +66,6 @@ def mostrar_comunidade(request):
 
 def mostrar_sobre(request):
     return render(request, 'sobre.html')
+
+def mostrar_usuario(request):
+    return render(request, 'usuario.html')
