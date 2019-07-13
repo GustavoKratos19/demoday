@@ -26,6 +26,6 @@ urlpatterns = [
     path('login/', views.mostrar_login),
     path('comunidade/', views.mostrar_comunidade),
     path('sobre/', views.mostrar_sobre),
-    path('usuario/', views.mostrar_usuario),
+    path('painel_usuario/', views.mostrar_painel_usuario),
     path('saiba/', views.mostrar_saiba),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
