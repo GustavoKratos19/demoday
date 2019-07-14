@@ -238,3 +238,16 @@ footer div img{
     height: 25px;
     width: 25px;
 }
+
+/* animações */
+
+.anime{
+    opacity: 0;
+    transform: translate3d(-100px,0,0);
+    transition: 0.8s;
+}
+
+.anime-start{
+    opacity: 1;
+    transform: translate3d(0,0,0)
+}
