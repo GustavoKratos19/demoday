@@ -44,7 +44,7 @@
 .carousel-inner{
     width: 100%;
     height: 50%;
-    margin-left: 210px;
+    margin-left: 250px;
 }
 
 .carousel-item{
@@ -58,4 +58,13 @@
     text-align: center;
     font-family: 'Open Sans', 'sans-serif';
     color: white;
+}
+
+    
+.carousel-control-next{
+    margin-bottom:100px;
+}
+
+.carousel-control-prev{
+    margin-bottom: 100px;
 }
