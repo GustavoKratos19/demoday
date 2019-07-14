@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{% static 'css/painel_usuario.css' %}">
+    <link rel="stylesheet" href="{% static 'css/comunidade.css' %}">
     <title>Painel Usuário</title>
 </head>
 <body>
@@ -25,7 +26,24 @@
                     </div>                    
                 </div>                                
             </div>
-        </div>        
+        </div>
+        <section  class="depoimento">
+            <h2>Depoimento</h2>
+            {% if mensagem %}
+            <p>{{ mensagem }}</p>
+            {% endif %}
+            <form method="POST" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ form }}            
+                <div id="btn">
+                    <button type="submit">Postar</button>
+                    <button type="reset">Limpar</button>             
+                </div>
+            </form>
+            <div>
+                <a href="/">Voltar</a>
+            </div>
+        </section>      
     </main>
     {% endblock %}        
 </body>
