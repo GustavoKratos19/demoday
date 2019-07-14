@@ -1,28 +1,20 @@
 body{
-    margin:0;
-    background-color:#ffcbe3;
-    height: 100vh;
-    padding: 0;
+    margin: 0;
+}
+/* 
+#saiba main{
+    height: 6800px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    text-align: justify;
 }
 
-section{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-section div{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-section h2{
-    display: flex;
-    justify-content:center;
-    text-align: justify; 
+#saiba main div{
     font-family: 'Satisfy', cursive;
-    font-size: 30px;
-}
-section p{
-    font-family: 'Open Sans', 'sans-serif';
-    font-size: 18px;
-}
+    width: 80%;  
+    display: flex; 
+    justify-content: space-around; 
+    flex-direction: column; 
+    padding: 0;
+} */
