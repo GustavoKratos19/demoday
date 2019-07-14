@@ -15,8 +15,7 @@ def mostrar_cadastro(request):
         if formulario.is_valid():
             formulario.save()
             formulario = CadastroForm
-            mensagem = 'Cadastro realizado com sucesso'
-    
+            mensagem = 'Cadastro realizado com sucesso'    
     contexto = {
         'form' : formulario,
         'mensagem' : menssagem,
@@ -25,14 +24,12 @@ def mostrar_cadastro(request):
 
 @csrf_exempt
 def mostrar_login(request):
-    entrar = EntrarForm(request.POST or None)
-    
+    entrar = EntrarForm(request.POST or None)    
     if request.method == 'POST':
         if entrar.is_valid():
             user = request.POST.get('usuario')
             senha = request.POST.get('senha')
             cadastro = CadastroDeUsuario.objects.filter(usuario=user, senha=senha)
-
             if not cadastro:
                 msg='Login ou senha invalido'
                 args = {
@@ -41,15 +38,23 @@ def mostrar_login(request):
                 }
                 return render(request, 'login.html', args)
             else:
-                return redirect('/painel_usuario')    
-    
-   
+                return redirect('/painel_usuario')       
     return render(request, 'login.html', {'form': entrar})
 
 def mostrar_inicial(request):
     return render(request, 'pagina_inicial.html')
 
 def mostrar_comunidade(request):
+    return render(request, 'comunidade.html')
+
+def mostrar_sobre(request):
+    return render(request, 'sobre.html')
+
+def mostrar_saiba(request):
+    return render(request, 'saiba.html')
+
+@csrf_exempt
+def mostrar_painel_usuario(request):
     depoimentos = DepoimentosForm(request.POST or None, request.FILES or None)
     menssagem = ''
     if request.method == 'POST':
@@ -62,14 +67,5 @@ def mostrar_comunidade(request):
         'form' : depoimentos,
         'mensagem' : menssagem,
     }
-    return render(request, 'comunidade.html', contexto)
-
-def mostrar_sobre(request):
-    return render(request, 'sobre.html')
-
-def mostrar_saiba(request):
-    return render(request, 'saiba.html')
-
-def mostrar_painel_usuario(request):
-    return render(request, 'painel_usuario.html')
+    return render(request, 'painel_usuario.html', contexto)
 
