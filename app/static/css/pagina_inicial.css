@@ -12,7 +12,7 @@ body{
     justify-content: space-evenly;
     height: 100px;
     width: 100%;
-    z-index: 10;
+    z-index: 16;
     position: fixed;
     transition: all 0.3s ease-in-out;
     opacity: 0.9;
@@ -25,7 +25,7 @@ body{
     justify-content: space-evenly;
     height: 100px;
     width: 100%;
-    z-index: 10;
+    z-index: 16;
     position: fixed;
     transition: all 0.3s ease-in-out;
     background-color: #b35f86;
@@ -207,13 +207,13 @@ aside{
     width: 40%;
 }
 
-#idTexto p{
+#idTexto h2{
     font-family: 'Satisfy', 'cursive';
     font-size: 50px;
     margin-bottom: 0;
 }
 
-#idTexto h4{
+#idTexto p{
     font-family: 'Open Sans', 'sans-serif';
     font-size: 20px;
     text-align: justify;

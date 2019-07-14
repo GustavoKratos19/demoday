@@ -1,4 +1,4 @@
-$(document).ready(function(){
+    $(document).ready(function(){
     let frases = ['incrível', 'forte', 'poderosa', 'confiante', 'empoderada', 'resistência' ];
     let cont = 0;
 
