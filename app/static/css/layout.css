@@ -78,14 +78,17 @@ nav .loginCadastro p{
 /* imagens no footer */
 footer{
     display: flex;
-    justify-content: center;
-    height: 70px   ;
+    align-items: center;
+    justify-content: space-around;
+    height: 200px;
     background-color: #b35f86;
+    bottom: 0;
 }
 
 footer div {
     display: flex;
     justify-content: space-evenly;
+    flex-direction: column;
     align-items: center;
     width:20%;
 }
@@ -93,4 +96,74 @@ footer div {
 footer div img{
     height: 25px;
     width: 25px;
+}
+
+footer div h3{
+    font-family: 'Satisfy', 'cursive';
+    font-weight: bolder;
+    font-size: 1.75rem;
+}
+
+.foot p{
+    font-family: 'Open Sans', 'sans-serif';
+    color: white;
+}
+
+#foottext{
+    height: 180px;
+    width: 215px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+#foottext p{
+    margin-top: 0;
+    margin-bottom:0;
+}
+
+#footimage{
+    width: 135px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+#redes{
+    height: 180px;
+    width: 315px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 0;
+}
+
+#contato{
+    height: 100%;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+#contato p {
+    margin-top: 0;
+    margin-bottom:0;
+}
+
+#contato a{
+    margin-top: 0;
+    margin-bottom:0;
+    text-decoration: none;
+    font-family: 'Open Sans', 'sans-serif';
+    color: black;
+}
+
+.foot{
+    display: flex;
+    align-items: flex-start;
 }
