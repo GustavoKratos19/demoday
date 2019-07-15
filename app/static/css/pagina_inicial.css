@@ -233,7 +233,7 @@ footer div {
     justify-content: space-evenly;
     flex-direction: column;
     align-items: center;
-    width:20%;
+    width:13%%;
 }
 
 footer div img{
@@ -244,11 +244,12 @@ footer div img{
 footer div h3{
     font-family: 'Satisfy', 'cursive';
     font-weight: bolder;
+    color: black;
 }
 
 .foot p{
     font-family: 'Open Sans', 'sans-serif';
-    
+    color: black;
 }
 
 #foottext{
@@ -265,7 +266,7 @@ footer div h3{
 }
 
 #footimage{
-    width: 200px;
+    width: 140px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
