@@ -44,9 +44,6 @@ def mostrar_login(request):
 def mostrar_inicial(request):
     return render(request, 'pagina_inicial.html')
 
-def mostrar_comunidade(request):
-    return render(request, 'comunidade.html')
-
 def mostrar_sobre(request):
     return render(request, 'sobre.html')
 
@@ -70,3 +67,9 @@ def mostrar_painel_usuario(request):
     }
     return render(request, 'painel_usuario.html', contexto)
 
+def mostrar_comunidade(request):
+    # depoimentosX = DepoimentosForm.objects.all()
+    # contexto = {
+    #     'depoimentosX' : depoimentosX,
+    # }
+    return render(request, 'comunidade.html')
