@@ -222,14 +222,16 @@ aside{
 /* imagens no footer */
 footer{
     display: flex;
-    justify-content: center;
-    height: 70px   ;
+    justify-content: space-around;
+    height: 170px   ;
     background-color: #b35f86;
+    bottom: 0;
 }
 
 footer div {
     display: flex;
     justify-content: space-evenly;
+    flex-direction: column;
     align-items: center;
     width:20%;
 }
@@ -239,6 +241,69 @@ footer div img{
     width: 25px;
 }
 
+footer div h3{
+    font-family: 'Satisfy', 'cursive';
+    font-weight: bolder;
+}
+
+.foot p{
+    font-family: 'Open Sans', 'sans-serif';
+    
+}
+
+#foottext{
+    width: 200px;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+#foottext p{
+    margin-top: 0;
+    margin-bottom:0;
+}
+
+#footimage{
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+#redes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+#contato{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#contato p {
+    margin-top: 0;
+    margin-bottom:0;
+}
+
+#contato a{
+    margin-top: 0;
+    margin-bottom:0;
+    text-decoration: none;
+    font-family: 'Open Sans', 'sans-serif';
+    color: black;
+}
+
+.foot{
+    display: flex;
+    align-items: flex-start;
+}
 /* animações */
 
 .anime{
