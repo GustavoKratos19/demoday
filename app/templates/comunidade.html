@@ -17,27 +17,14 @@
     <main class="comunidade">
         <h2>Meus Depoimentos</h2>
         <div id="depimentosX">
-            <!-- {% for i in depoimentosX %}
-                <div class="card">
-                    <h3>{{ i.titulo_depoimento}}</h3>
-                    <img src="/{{i.imagem.url}}" alt="imagem">
-                    <p>{{ i.depoimento}}</p>
-                    <p>Autora: {{ i.nome}}</p>
-                </div>
-                {% endfor %} -->
-                
+            {% for i in depoimentosX %}
             <div class="card">
-                <h3>uhoeidjisdji</h3>
-                <img src="../static/img/jardim.jpg" alt="">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, recusandae pariatur dignissimos explicabo reprehenderit voluptatum exercitationem eius, mollitia in quibusdam earum consequatur voluptatem laboriosam accusantium illum iusto eaque animi excepturi.
-                    Ratione, error odio inventore, illum eveniet dolorum magni optio praesentium eaque eligendi alias beatae. Atque veniam veritatis, numquam, facilis consequuntur at sunt deserunt magnam dolorem illo porro animi pariatur quisquam.
-                    Ullam exercitationem molestiae necessitatibus tenetur magnam! Optio sapiente cum quo odit praesentium quidem beatae voluptate pariatur eaque aliquam ipsam veniam neque amet consequuntur atque illo fugiat eligendi at, quasi recusandae.
-                    Mollitia nam veniam rerum optio dicta eligendi officiis, cumque iusto. Explicabo maiores facilis, laboriosam dolor velit accusamus sit consequuntur dolorum cum, quis perferendis minima sint, aspernatur modi ex aperiam omnis.
-                    Dolorum nisi obcaecati atque placeat incidunt eveniet ea quidem numquam tempore eligendi, exercitationem deserunt aliquid labore quas. Laudantium cupiditate accusantium fugiat similique. Minima perferendis esse, accusantium eos dignissimos ducimus a.
-                </p>
-                <p>Autora: uhodhilsdflsdlsdkl</p>
+                <h3>{{ i.titulo_depoimento}}</h3>
+                <img src="/{{i.imagem.url}}" alt="imagem">
+                <p>{{ i.depoimento}}</p>
+                <p>Autora: {{ i.nome}}</p>
             </div>
+            {% endfor %}                
         </div>
         <div>
             <a href="/painel_usuario">Voltar</a>
