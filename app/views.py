@@ -3,7 +3,7 @@ from app.forms import CadastroForm
 from app.forms import DepoimentosForm
 from app.forms import EntrarForm
 from app.forms import DepoimentosForm
-from app.models import CadastroDeUsuario
+from app.models import CadastroDeUsuario, DepoimentosUsuario
 from django.views.decorators.csrf import csrf_exempt
 
 # Create your views here.
@@ -38,6 +38,7 @@ def mostrar_login(request):
                 }
                 return render(request, 'login.html', args)
             else:
+                request.session['usuario'] = user
                 return redirect('/painel_usuario')
     return render(request, 'login.html', {'form': entrar})
 
@@ -52,7 +53,7 @@ def mostrar_saiba(request):
 
 @csrf_exempt
 def mostrar_painel_usuario(request):
-    usuario_x = CadastroDeUsuario.objects.all()
+    usuario_x = CadastroDeUsuario.objects.get(usuario = request.session['usuario'])
     depoimentos = DepoimentosForm(request.POST or None, request.FILES or None)
     menssagem = ''
     if request.method == 'POST':
@@ -68,8 +69,8 @@ def mostrar_painel_usuario(request):
     return render(request, 'painel_usuario.html', contexto)
 
 def mostrar_comunidade(request):
-    # depoimentosX = DepoimentosForm.objects.all()
-    # contexto = {
-    #     'depoimentosX' : depoimentosX,
-    # }
-    return render(request, 'comunidade.html')
+    depoimentosX = DepoimentosUsuario.objects.all()
+    contexto = {
+        'depoimentosX' : depoimentosX,
+    }
+    return render(request, 'comunidade.html', contexto)
