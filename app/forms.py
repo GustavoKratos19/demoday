@@ -28,6 +28,7 @@ class DepoimentosForm(forms.ModelForm):
             'depoimento',
             'imagem',
             'tipo',
+            'nome',
         ]
         widgets = {
             'titulo_depoimento': forms.TextInput(attrs={'placeholder': 'De um titulo ao seu depoimento'}),
