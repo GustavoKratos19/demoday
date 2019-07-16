@@ -55,9 +55,17 @@ main{
     height: 75%;
 }
 
-#x p{
+#x div{
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    width: 85%; 
+    height: auto;
+}
+
+#x div p{
     color: white;
-    font-size: 16pt;
+    font-size: 12pt;
     font-weight: bolder;
     font-family: 'Open Sans', sans-serif;
     margin: 0;
