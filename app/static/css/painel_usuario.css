@@ -3,7 +3,8 @@ body{
 }
 main{
     width: 100%;
-    min-height: 1000px;
+    min-height: 1080px;
+    max-height: 2000px;
 }
 
 #fundo{
@@ -75,7 +76,7 @@ main{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 430px;
+    height: 550px;
 }
 
 .depoimento h2{
@@ -92,8 +93,10 @@ main{
 .depoimento input{
     border-radius: 5px;
     background-color: white;
+    padding: 5px;
+    text-align: center;
     margin: 5px;
-    width: 270px;
+    width: 300px;
     height: 25px;
     border: 0;
 }
@@ -101,11 +104,12 @@ main{
 .depoimento input[type=file] {
     height: auto;
     border-radius: 0;
+    padding: 0;
 }
 
 .depoimento select{
     background-color: white;
-    width: 270px;
+    width: 300px;
     margin: 5px;
     height: 25px;
     border-radius: 5px;
@@ -115,7 +119,8 @@ main{
 .depoimento textarea{
     height: 250px;
     width: 600px;
-    border-radius: 5px;
+    padding: 10px;
+    border-radius: 10px;
     border: 0;
     margin: 5px;
 }

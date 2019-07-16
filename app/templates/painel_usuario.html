@@ -17,8 +17,10 @@
         <div id="fundo">
             <div id="painel">
                 <div id="x">
-                    <img src="https://2.bp.blogspot.com/-nhqCEygW4Wo/V1XtDiduY9I/AAAAAAAAAts/Q_g88fix6EgGtuTDyLQb7riYb7574xS_ACLcB/s400/Marvel%2BFaces%2B-%2BGIF.gif" alt="foto do usuario">
-                    <p>Herois da Marvel</p>
+                    {% for i in usuario_x %}
+                    <img src="/{{i.foto.url}}" alt="">
+                    <p>{{ i.usuario}}</p>
+                    {% endfor %}
                 </div>                                
                 <div id="y">
                     <div id="escuroX">

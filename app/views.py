@@ -15,7 +15,7 @@ def mostrar_cadastro(request):
         if formulario.is_valid():
             formulario.save()
             formulario = CadastroForm
-            mensagem = 'Cadastro realizado com sucesso'    
+            mensagem = 'Cadastro realizado com sucesso'
     contexto = {
         'form' : formulario,
         'mensagem' : menssagem,
@@ -24,7 +24,7 @@ def mostrar_cadastro(request):
 
 @csrf_exempt
 def mostrar_login(request):
-    entrar = EntrarForm(request.POST or None)    
+    entrar = EntrarForm(request.POST or None)
     if request.method == 'POST':
         if entrar.is_valid():
             user = request.POST.get('usuario')
@@ -38,14 +38,11 @@ def mostrar_login(request):
                 }
                 return render(request, 'login.html', args)
             else:
-                return redirect('/painel_usuario')       
+                return redirect('/painel_usuario')
     return render(request, 'login.html', {'form': entrar})
 
 def mostrar_inicial(request):
     return render(request, 'pagina_inicial.html')
-
-def mostrar_comunidade(request):
-    return render(request, 'comunidade.html')
 
 def mostrar_sobre(request):
     return render(request, 'sobre.html')
@@ -55,6 +52,7 @@ def mostrar_saiba(request):
 
 @csrf_exempt
 def mostrar_painel_usuario(request):
+    usuario_x = CadastroDeUsuario.objects.all()
     depoimentos = DepoimentosForm(request.POST or None, request.FILES or None)
     menssagem = ''
     if request.method == 'POST':
@@ -62,10 +60,16 @@ def mostrar_painel_usuario(request):
             depoimentos.save()
             depoimentos = DepoimentosForm
             mensagem = 'Depoimento enviado com sucesso'
-    
     contexto = {
         'form' : depoimentos,
         'mensagem' : menssagem,
+        'usuario_x' : usuario_x,
     }
     return render(request, 'painel_usuario.html', contexto)
 
+def mostrar_comunidade(request):
+    # depoimentosX = DepoimentosForm.objects.all()
+    # contexto = {
+    #     'depoimentosX' : depoimentosX,
+    # }
+    return render(request, 'comunidade.html')

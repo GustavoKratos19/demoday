@@ -8,12 +8,50 @@ body{
 .comunidade{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     flex-direction: column;
-    height: 680px;
+    min-width: 1000px;
+    max-width: 6000px;
 }
 
-.comunidade h2{
+#depimentosX{
+    min-width: 1000px;
+    max-width: 6000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 720px;
+    width: 650px;
+    padding: 20px;
+}
+
+.card img{
+    height: 200px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px black;
+}
+
+.card p{
+    margin: 0;
+    text-align: justify;
+}
+
+.card:hover{
+    box-shadow: 2px 2px 8px black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* .comunidade h2{
     font-family: 'Satisfy', cursive;
 }
 
@@ -74,4 +112,4 @@ body{
 
 #btn{
     width: 150px;
-}
+} */
