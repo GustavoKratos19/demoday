@@ -155,6 +155,10 @@ header{
     font-family: 'Open Sans', sans-serif;
 }
 
+#subtitle p{
+    font-size: 25px;
+}
+
 /* parte do quem nós somos */
 
 section{
@@ -234,7 +238,7 @@ footer div {
     justify-content: space-evenly;
     flex-direction: column;
     align-items: center;
-    width:20%;
+    width:13%%;
 }
 
 footer div img{
@@ -245,12 +249,13 @@ footer div img{
 footer div h3{
     font-family: 'Satisfy', 'cursive';
     font-weight: bolder;
+    color: black;
     font-size: 1.75rem;
 }
 
 .foot p{
     font-family: 'Open Sans', 'sans-serif';
-    color: white;
+    color: black;
 }
 
 #foottext{
@@ -264,7 +269,7 @@ footer div h3{
 }
 
 #foottext p{
-    margin-top: 0;
+    margin-top: -60px;
     margin-bottom:0;
 }
 
@@ -273,7 +278,8 @@ footer div h3{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 10px;
+    margin-top: -84px;
+    margin-right: 10px;
 }
 
 #redes{
@@ -287,7 +293,7 @@ footer div h3{
 
 #contato{
     height: 100%;
-    width: 250px;
+    width: 310px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
