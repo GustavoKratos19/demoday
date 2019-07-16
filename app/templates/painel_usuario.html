@@ -16,11 +16,11 @@
     <main>
         <div id="fundo">
             <div id="painel">
-                <div id="x">
-                    {% for i in usuario_x %}
-                    <img src="/{{i.foto.url}}" alt="">
-                    <p>{{ i.usuario}}</p>
-                    {% endfor %}
+                <div id="x">                    
+                    <img src="/{{usuario_x.foto.url}}" alt="">
+                    <div>
+                        <p>{{ usuario_x.nome}}</p> 
+                    </div>                   
                 </div>                                
                 <div id="y">
                     <div id="escuroX">
