@@ -5,7 +5,7 @@ from app.forms import EntrarForm
 from app.forms import DepoimentosForm
 from app.models import CadastroDeUsuario, DepoimentosUsuario
 from django.views.decorators.csrf import csrf_exempt
-import django_heroku
+
 
 # Create your views here.
 @csrf_exempt
