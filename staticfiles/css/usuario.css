@@ -1,0 +1,169 @@
+body{
+    margin: 0;
+}
+
+nav{
+    background-color: #b35f86;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    height: 100px;
+    width: 100%;
+}
+
+/* logo e titulo */
+
+
+nav .logoImg a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 10%;
+    text-decoration:none;
+    margin-left: 60px;
+}
+
+/* logo de cima, mãozinha */
+nav img{ 
+    height: auto;
+    width: 50px;
+}
+
+/* título */
+nav h1{
+    font-family: 'Satisfy', cursive;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+
+.divLinks{
+    font-family: 'Open Sans', sans-serif;
+    justify-content: flex-end;
+    display: flex;
+    width:60%;
+    margin-left: 20px;
+}
+
+.divLinks a {
+    color: white;
+    text-decoration: none;
+    margin-left: 35px;
+}
+
+/* login */
+nav .loginCadastro{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 150px;
+}
+
+nav .loginCadastro a{
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-weight: bolder;
+}
+nav .loginCadastro p{
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+
+
+/* imagens no footer */
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 200px;
+    background-color: #b35f86;
+    bottom: 0;
+}
+
+footer div {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    width:20%;
+}
+
+footer div img{
+    height: 25px;
+    width: 25px;
+}
+
+footer div h3{
+    font-family: 'Satisfy', 'cursive';
+    font-weight: bolder;
+    font-size: 1.75rem;
+}
+
+.foot p{
+    font-family: 'Open Sans', 'sans-serif';
+    color: black;
+}
+
+#foottext{
+    height: 180px;
+    width: 215px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+#foottext p{
+    margin-top: 0;
+    margin-bottom:0;
+}
+
+#footimage{
+    width: 135px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+#redes{
+    height: 180px;
+    width: 315px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 0;
+}
+
+#contato{
+    height: 100%;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+#contato p {
+    margin-top: 0;
+    margin-bottom:0;
+}
+
+#contato a{
+    margin-top: 0;
+    margin-bottom:0;
+    text-decoration: none;
+    font-family: 'Open Sans', 'sans-serif';
+    color: black;
+}
+
+.foot{
+    display: flex;
+    align-items: flex-start;
+}
