@@ -1,0 +1,331 @@
+body{
+    margin: 0;
+    background-color: #ffcbe3;
+}
+
+/* efeito de transparencia da nav */
+
+#antes{
+    background-color: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100px;
+    width: 100%;
+    z-index: 16;
+    position: fixed;
+    transition: all 0.3s ease-in-out;
+    opacity: 0.9;
+}
+
+
+#depois {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100px;
+    width: 100%;
+    z-index: 16;
+    position: fixed;
+    transition: all 0.3s ease-in-out;
+    background-color: #b35f86;
+}
+
+#subtitle {
+    display: flex;
+    justify-content: center;
+}
+/* logo e titulo */
+
+
+nav .logoImg a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 10%;
+    text-decoration:none;
+    margin-left: 60px;
+}
+
+/* logo de cima, mãozinha */
+nav img{ 
+    height: auto;
+    width: 50px;
+}
+
+/* título */
+nav h1{
+    font-family: 'Satisfy', cursive;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+
+.divLinks{
+    font-family: 'Open Sans', sans-serif;
+    justify-content: flex-end;
+    display: flex;
+    width:60%;
+    margin-left: 20px;
+}
+
+.divLinks a {
+    color: white;
+    text-decoration: none;
+    margin-left: 35px;
+}
+.divLinks a:hover{
+    border-bottom: 2px solid #4db34f;
+}
+/* login */
+nav .loginCadastro{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 160px;
+}
+
+nav .loginCadastro a{
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-weight: bolder;
+}
+nav .loginCadastro span{
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+
+/* foto de background */
+
+header{
+    background-image: url("../img/relacionamento-abusivo.975bc5114bea.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    position: relative;
+}
+
+/* colocar o header escuro */
+
+#escuro{
+    background-color: rgba(0, 0, 0, 0.58);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* escritas no header */
+
+#divFrases{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+} 
+
+#divFrases p{
+    font-family: 'Satisfy', 'cursive';
+    font-size: 100px;
+    color: white;
+    margin-bottom: 0;
+    margin: 15px;
+}
+
+#escuro span{
+    width: 40vw;
+    height: 3px;
+    background-color: #4db34f;
+}
+
+#escuro #subtitle{
+    width: 40%;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#subtitle p{
+    font-size: 25px;
+}
+
+/* parte do quem nós somos */
+
+section{
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section #divQuem{
+    font-family: 'Satisfy', 'cursive';
+}
+
+#divQuem p{
+    font-size:50px;
+    margin-bottom: 0;
+}
+
+#divTexto{
+    width: 70%;
+}
+
+#divTexto #textoinicial{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* parte de pontos de ajuda do site */
+
+aside{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#mapa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0;
+}
+
+#idTexto{
+    display: block;
+    width: 40%;
+}
+
+#idTexto h2{
+    font-family: 'Satisfy', 'cursive';
+    font-size: 50px;
+    margin-bottom: 0;
+}
+
+#idTexto p{
+    font-family: 'Open Sans', 'sans-serif';
+    font-size: 20px;
+    text-align: justify;
+}
+
+/* imagens no footer */
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 200px;
+    background-color: #b35f86;
+    bottom: 0;
+}
+
+footer div {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    width:13%%;
+}
+
+footer div img{
+    height: 25px;
+    width: 25px;
+}
+
+footer div h3{
+    font-family: 'Satisfy', 'cursive';
+    font-weight: bolder;
+    color: black;
+    font-size: 1.75rem;
+}
+
+.foot p{
+    font-family: 'Open Sans', 'sans-serif';
+    color: black;
+}
+
+#foottext{
+    height: 180px;
+    width: 215px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+#foottext p{
+    margin-top: -60px;
+    margin-bottom:0;
+}
+
+#footimage{
+    width: 135px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: -84px;
+    margin-right: 10px;
+}
+
+#redes{
+    height: 180px;
+    width: 315px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 0;
+}
+
+#contato{
+    height: 100%;
+    width: 310px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+#contato p {
+    margin-top: 0;
+    margin-bottom:0;
+}
+
+#contato a{
+    margin-top: 0;
+    margin-bottom:0;
+    text-decoration: none;
+    font-family: 'Open Sans', 'sans-serif';
+    color: black;
+}
+
+.foot{
+    display: flex;
+    align-items: flex-start;
+}
+/* animações */
+
+.anime{
+    opacity: 0;
+    transform: translate3d(-100px,0,0);
+    transition: 0.8s;
+}
+
+.anime-start{
+    opacity: 1;
+    transform: translate3d(0,0,0)
+}
